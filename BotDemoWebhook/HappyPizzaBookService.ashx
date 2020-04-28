@@ -1,1 +1,1 @@
-﻿<%@ WebHandler Language="C#" CodeBehind="HappyPizzaBookService.ashx.cs" Class="WebApplication5.HappyPizzaBookService" %>
+﻿<%@ WebHandler Language="C#" CodeBehind="HappyPizzaBookService.ashx.cs" Class="BotDemoWebhook.Web.HappyPizzaBookService" %>

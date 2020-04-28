@@ -899,4 +899,159 @@
 			"value":"addf8exs"
 		}
 		]
-}output:"[{\r\n  'type': 'text',\r\n  'content': {\r\n    'message': 'Sorry, the order does not exist.'\r\n  }\r\n}]"
+}output:"[{\r\n  'type': 'text',\r\n  'content': {\r\n    'message': 'Sorry, the order does not exist.'\r\n  }\r\n}]"2020/4/28 2:31:04 PM
+input:{
+	"formValues":[
+		{
+			"label":"jack",
+			"value":"111111"
+		}
+		]
+}
+2020/4/28 2:31:04 PM
+
+ output:""
+2020/4/28 2:31:20 PM
+input:{
+	"formValues":[
+		{
+			"label":"jack",
+			"value":"111111"
+		}
+		]
+}
+2020/4/28 2:31:20 PM
+
+ output:""
+2020/4/28 2:31:26 PM
+input:{
+	"formValues":[
+		{
+			"label":"jack",
+			"value":"111111"
+		}
+		]
+}
+2020/4/28 2:31:26 PM
+
+ output:""
+2020/4/28 2:31:27 PM
+input:{
+	"formValues":[
+		{
+			"label":"jack",
+			"value":"111111"
+		}
+		]
+}
+2020/4/28 2:31:27 PM
+
+ output:""
+2020/4/28 2:35:16 PM
+input:{
+	"formValues":[
+		{
+			"label":"jack",
+			"value":"111111"
+		}
+		]
+}
+2020/4/28 2:35:57 PM
+
+ output:"[{\r\n  'type': 'text',\r\n  'content': {\r\n    'message': 'Name or password is wrong.'\r\n  }\r\n}]"
+2020/4/28 2:36:23 PM
+input:{
+	"formValues":[
+		{
+			"label":"name",
+			"value":"jack"
+		},
+		{
+			"label":"password",
+			"value":"111111"
+		}
+		]
+}
+2020/4/28 2:36:36 PM
+
+ output:"[{\r\n  'type': 'text',\r\n  'content': {\r\n    'message': 'Name or password is wrong.'\r\n  }\r\n}]"
+2020/4/28 2:36:45 PM
+input:{
+	"formValues":[
+		{
+			"label":"name",
+			"value":"jack"
+		},
+		{
+			"label":"password",
+			"value":"123456"
+		}
+		]
+}
+2020/4/28 2:36:49 PM
+
+ output:"[{\r\n  'type': 'text',\r\n  'content': {\r\n    'message': 'Name or password is wrong.'\r\n  }\r\n}]"
+2020/4/28 2:37:01 PM
+input:{
+	"formValues":[
+		{
+			"label":"name",
+			"value":"jack"
+		},
+		{
+			"label":"password",
+			"value":"123456"
+		}
+		]
+}
+2020/4/28 2:37:21 PM
+
+ output:"[{\r\n  'type': 'text',\r\n  'content': {\r\n    'message': 'Name or password is wrong.'\r\n  }\r\n}]"
+2020/4/28 2:37:26 PM
+input:{
+	"formValues":[
+		{
+			"label":"name",
+			"value":"Jack"
+		},
+		{
+			"label":"password",
+			"value":"123456"
+		}
+		]
+}
+2020/4/28 2:37:30 PM
+
+ output:"[{\r\n  'type': 'text',\r\n  'content': {\r\n    'message': 'Login succeeded.'\r\n  }\r\n}]"
+2020/4/28 2:37:39 PM
+input:{
+	"formValues":[
+		{
+			"label":"name",
+			"value":"Jack"
+		},
+		{
+			"label":"password",
+			"value":"1234567"
+		}
+		]
+}
+2020/4/28 2:37:39 PM
+
+ output:"[{\r\n  'type': 'text',\r\n  'content': {\r\n    'message': 'Name or password is wrong.'\r\n  }\r\n}]"
+2020/4/28 2:37:43 PM
+input:{
+	"formValues":[
+		{
+			"label":"name",
+			"value":"Jack"
+		},
+		{
+			"label":"password",
+			"value":"123456"
+		}
+		]
+}
+2020/4/28 2:37:43 PM
+
+ output:"[{\r\n  'type': 'text',\r\n  'content': {\r\n    'message': 'Login succeeded.'\r\n  }\r\n}]"

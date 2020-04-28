@@ -7,7 +7,7 @@ using System.Text;
 using System.Web;
 using BotDemoWebhook.Web;
 
-namespace WebApplication5
+namespace BotDemoWebhook.Web
 {
     /// <summary>
     /// HappyPizzaBookService 的摘要说明

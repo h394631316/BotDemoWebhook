@@ -1,1 +1,1 @@
-﻿<%@ WebHandler Language="C#" CodeBehind="ThirdPartBotWebHook.ashx.cs" Class="WebApplication5.ThirdPartBotWebHook" %>
+﻿<%@ WebHandler Language="C#" CodeBehind="ThirdPartBotWebHook.ashx.cs" Class="BotDemoWebhook.Web.ThirdPartBotWebHook" %>

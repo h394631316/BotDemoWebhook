@@ -431,6 +431,7 @@
     <Content Include="DonorDemo\dist\css\adminlte.css.map" />
     <Content Include="DonorDemo\dist\css\adminlte.min.css.map" />
     <Content Include="DonorDemo\insights-slice-opportunity-pizza.webp" />
+    <Content Include="LoginService.ashx" />
     <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <Content Include="questionAsked.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -481,6 +482,9 @@
       <DependentUpon>About.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="LoginService.ashx.cs">
+      <DependentUpon>LoginService.ashx</DependentUpon>
+    </Compile>
     <Compile Include="HappyPizzaBookService.ashx.cs">
       <DependentUpon>HappyPizzaBookService.ashx</DependentUpon>
     </Compile>
