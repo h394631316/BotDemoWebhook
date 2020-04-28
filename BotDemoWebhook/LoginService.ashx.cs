@@ -63,7 +63,7 @@ namespace BotDemoWebhook.Web
                         string stringResult = "Your email or password is wrong. Login failed.";
                         if(accounts.Exists(f=>f.Name == name && f.Password == password))
                         {
-                            stringResult = "Login succeeded.";
+                            stringResult = "Login successfully!";
                         }
 
                         strResult = @"[{
