@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>donor</title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <!-- Bootstrap 3.3.7 -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="bower_components/Ionicons/css/ionicons.min.css">
+    <!-- daterange picker -->
+    <link rel="stylesheet" href="bower_components/bootstrap-daterangepicker/daterangepicker.css">
+    <!-- bootstrap datepicker -->
+    <link rel="stylesheet" href="bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css">
+    <!-- iCheck for checkboxes and radio inputs -->
+    <link rel="stylesheet" href="plugins/iCheck/all.css">
+    <!-- Bootstrap time Picker -->
+    <link rel="stylesheet" href="plugins/timepicker/bootstrap-timepicker.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="dist/css/AdminLTE.min.css">
+    <!-- AdminLTE Skins. Choose a skin from the css/skins
+        folder instead of downloading all of them to reduce the load. -->
+    <link rel="stylesheet" href="dist/css/skins/_all-skins.min.css">
+    
+    <style>
+      #contain{
+        background: url(eligibility-question-age.jpg) no-repeat center center;
+        background-size: cover;
+        margin-right: -250px;
+        box-sizing: border-box;
+        padding-bottom: 35px;
+        height: 417px;
+      }
+      #line{
+        display: absolute;
+        height: 2px;
+        margin-top: 40px;
+        background-color: white;
+      }
+      ul{
+            list-style-type: none;
+            margin: 10px; /* 与外界元素的距离为0 */
+            padding: 0px; /* 与内部元素的距离为0 */
+            width: auto; /* 宽度根据元素内容调整 */
+            text-align: center;
+
+        }
+        ul li{
+           float:left; /* 向左漂移，将竖排变为横排 */
+            text-align: center;
+            width: 26px;
+            height: 26px;
+            /* background-color: grey; */
+            border: solid 2px white;
+            border-radius:50%;
+            font-size: 15px;
+            color: white;
+            margin-left: 10px;
+            }
+            .modal{
+              overflow-y: auto;
+              margin-top: 200px;
+            }
+            .active{
+              background-color: green;
+            }
+            .startover{
+              background-color: red;
+            }      
+      .modal-body{
+        text-align: center;
+      }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div style="overflow-y: auto;">
+            <div class="row">
+                <img width="100%" height="100" style="margin-left: -50px;" src="CBS_Logo_descriptors_CMYK.svg" alt="logo">
+            </div>
+            <div class="content">
+
+                <div class="row" id="contain">
+                  <div class="col-md-12" id="title" >
+                    <h3 style="color: white; font-size: 20px; margin-left: 20px;">
+                        Eligibility quiz Question <strong id="page-step">1/8</strong>
+                    </h3>
+                      <ul>
+                          <li id="one">1</li>
+                          <li id="two">2</li>
+                          <li id="three">3</li>
+                          <li id="fore">4</li>
+                          <li id="five">5</li>
+                          <li id="six">6</li>
+                          <li id="seven">7</li>
+                          <li id="eight">8</li>
+                      </ul>
+                  </div>
+                  <div class="col-md-12" id="line" >
+
+                  </div>
+                  <div class="col-md-12" id="contain-body" >
+                      <button type="button" class="btn btn-default" data-toggle="modal" data-target="#modal-one" style="display: none;" id="button_modal" >
+                          Launch Default Modal
+                        </button>
+                  </div>
+                  <div class="col-md-12" id="contain-bottom" >
+
+                  </div>
+                </div>
+            </div>
+            <div class="modal fade" data-backdrop="static" id="modal-review">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header" style="display: none;">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span></button>
+                      <h4 class="modal-title">Default Modal</h4>
+                    </div>
+                    <div class="modal-body">
+                      <p style="font-size: 20px;text-align: center;">Great! You are now ready to book an appointment to give blood.</p>
+                      <p style="font-size: 20px;text-align: center;"><a style="color: red;font-size: 20px;text-align: center;" target="_blank" href="https://blood.ca/en/donate">BOOK NOW</a></p>
+                      <p style="font-size: 20px;text-align: center;">Just so you know, final eligibility is determined by staff at the blood donor clinic. So if you have questions, use our LiveChat, email <a style="color: red;font-size: 20px;text-align: center;" target="_blank" href="mailto:feedback@blood.ca">feedback@blood.ca</a> or call us at 1-888-236-6283.</p>
+                      <p style="font-size: 20px;text-align: center;">Still have questions? Check out our ABC's of Eligibility.</p>
+                      <p style="font-size: 20px;text-align: center;"><a style="color: red;font-size: 20px;text-align: center;" target="_blank" href="https://blood.ca/en/blood/abcs-eligibility">LEARN MORE</a></p>
+                    </div>
+                    <div style="display:none;" class="modal-footer">
+                      <button type="button" class="btn btn-primary" data-dismiss="modal" id="btn_review_yes">Yes</button>
+                      <button type="button" class="btn btn-default" id="btn_review_no">No</button>
+                    </div>
+                  </div>
+                  <!-- /.modal-content -->
+                </div>
+                <!-- /.modal-dialog -->
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" data-backdrop="static" id="modal-startover">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header" style="display: none;">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title">Default Modal</h4>
+            </div>
+            <div class="modal-body">
+              <p id="modal-content" style="font-size: 20px;text-align: center;">Unfortunately you are not able to donate blood just yet. But you can still<a target="_blank" style="color: red;" href="https://blood.ca/en/volunteers"> get involved in saving lives, and learn more about <a target="_blank" href="https://blood.ca/en/blood/abcs-eligibility#age">when you can start donating</a>.</a></p>
+              <p id="modal-content" style="font-size: 20px;text-align: center;"><a style="color: red;font-size: 20px;text-align: center;" target="_blank" href="https://blood.ca/en/blood/abcs-eligibility#tattoos" >More Information</a></p>
+            </div>
+            <div class="modal-footer">
+              <!-- <button type="button" class="btn btn-primary" data-dismiss="modal" id="btn_startover_yes">View Info</button> -->
+              <a class="btn btn-primary" target="_blank" href="https://blood.ca/en/blood/abcs-eligibility">View Info</a>
+              <button type="button" class="btn btn-default" id="btn_startover_no">Star Over</button>
+            </div>
+          </div>
+          <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+    <div class="modal fade" data-backdrop="static" id="modal-one">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header" style="display: none;">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title">Default Modal</h4>
+            </div>
+            <div class="modal-body">
+              <p id="modal-content" style="font-size: 20px;text-align: center;">I am over 17 years old.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary" data-dismiss="modal" id="btn_one_yes">Yes</button>
+              <button type="button" class="btn btn-default" id="btn_one_no">No</button>
+            </div>
+          </div>
+          <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>    
+    <div class="modal fade" data-backdrop="static" id="modal-two">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header" style="display: none;">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title">Default Modal</h4>
+            </div>
+            <div class="modal-body">
+              <p id="modal-content" style="font-size: 20px;text-align: center;">I have hand a tattoo or piercing in the last 3 months.</p>
+              <p id="modal-content" style="font-size: 20px;text-align: center;"></p><a style="color: red;font-size: 20px;text-align: center;" target="_blank" href="https://blood.ca/en/blood/abcs-eligibility#tattoos" style="font-size: 20px;text-align: center;">More Information</a></p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary" data-dismiss="modal" id="btn_two_yes">Yes</button>
+              <button type="button" class="btn btn-default" id="btn_two_no">No</button>
+            </div>
+          </div>
+          <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+    <div class="modal fade" data-backdrop="static" id="modal-three">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header" style="display: none;">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title">Default Modal</h4>
+            </div>
+            <div class="modal-body">
+              <p id="modal-content" style="font-size: 20px;text-align: center;">I have travelled outside Canada or the continental U.S. in the last 12 months.</p>
+              <p id="modal-content" style="font-size: 20px;text-align: center;"></p><a style="color: red;font-size: 20px;text-align: center;" target="_blank" href="https://blood.ca/en/blood/abcs-eligibility#tattoos" style="font-size: 20px;text-align: center;">More Information</a></p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary" data-dismiss="modal" id="btn_three_yes">Yes</button>
+              <button type="button" class="btn btn-default" id="btn_three_no">No</button>
+            </div>
+          </div>
+          <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+    <div class="modal fade" data-backdrop="static" id="modal-fore">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header" style="display: none;">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title">Default Modal</h4>
+            </div>
+            <div class="modal-body">
+              <p id="modal-content" style="font-size: 20px;text-align: center;">I have had a cleaning or filling today, or dental surgery in last 72 hours.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary" data-dismiss="modal" id="btn_fore_yes">Yes</button>
+              <button type="button" class="btn btn-default" id="btn_fore_no">No</button>
+            </div>
+          </div>
+          <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+    <div class="modal fade" data-backdrop="static" id="modal-five">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header" style="display: none;">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title">Default Modal</h4>
+            </div>
+            <div class="modal-body">
+              <p id="modal-content" style="font-size: 20px;text-align: center;">I have been pregnant or had a baby in the last 6 months.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary" data-dismiss="modal" id="btn_five_yes">Yes</button>
+              <button type="button" class="btn btn-default" id="btn_five_no">No</button>
+            </div>
+          </div>
+          <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+    <div class="modal fade" data-backdrop="static" id="modal-six">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header" style="display: none;">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title">Default Modal</h4>
+            </div>
+            <div class="modal-body">
+              <p id="modal-content" style="font-size: 20px;text-align: center;">I have spent 3 months or more cumulatively in the United Kingdom.</p>
+              <p id="modal-content" style="font-size: 20px;text-align: center;"></p><a style="color: red;font-size: 20px;text-align: center;" target="_blank" href="https://blood.ca/en/blood/abcs-eligibility#tattoos" style="font-size: 20px;text-align: center;">More Information</a></p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary" data-dismiss="modal" id="btn_six_yes">Yes</button>
+              <button type="button" class="btn btn-default" id="btn_six_no">No</button>
+            </div>
+          </div>
+          <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+    <div class="modal fade" data-backdrop="static" id="modal-seven">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header" style="display: none;">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title">Default Modal</h4>
+            </div>
+            <div class="modal-body">
+              <p id="modal-content" style="font-size: 20px;text-align: center;">I am taking prescription medications.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary" data-dismiss="modal" id="btn_seven_yes">Yes</button>
+              <button type="button" class="btn btn-default" id="btn_seven_no">No</button>
+            </div>
+          </div>
+          <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+    <div class="modal fade" data-backdrop="static" id="modal-eight">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header" style="display: none;">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title">Default Modal</h4>
+            </div>
+            <div class="modal-body">
+              <p id="modal-content" style="font-size: 20px;text-align: center;">I weigh more than 110 lbs.<strong>What!</strong> If you are between the ages of 17 and 23 check your height/weight info <a style="color: red;" target="_blank" href="https://blood.ca/en/blood/can-i-donate">here</a></p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary" data-dismiss="modal" id="btn_eight_yes">Yes</button>
+              <button type="button" class="btn btn-default" id="btn_eight_no">No</button>
+            </div>
+          </div>
+          <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+
+    <!-- /.modal -->
+    <!-- jQuery 3 -->
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap 3.3.7 -->
+    <script src="bower_components/bootstrap/dist/js1/bootstrap.min.js"></script>
+    <!-- SlimScroll -->
+    <script src="bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+    <!-- date-range-picker -->
+    <script src="bower_components/moment/min/moment.min.js"></script>
+    <script src="bower_components/bootstrap-daterangepicker/daterangepicker.js"></script>
+    <!-- bootstrap datepicker -->
+    <script src="bower_components/bootstrap-datepicker/dist/js1/bootstrap-datepicker.min.js"></script>
+    <!-- bootstrap time picker -->
+    <script src="plugins/timepicker/bootstrap-timepicker.min.js"></script>
+
+    <script>
+      var currIndex=1
+      var bookData={
+        location:'Canodian Blood Services,Dunsmuir St. 888 Dunsmuir St Vancouver,BC,V6C 3K4.',
+        date:''
+      }
+        $(function () {
+
+          const yourLocation=getQueryString('location');
+          $('#yourLocation').html(yourLocation)
+
+          //Date picker
+          $('#datepicker').datepicker({
+            autoclose: true,
+            todayHighlight : true
+          })
+
+          var myDate = new Date();02/20/2019
+          $('#datepicker').val(moment(myDate).format('MM/DD/YYYY'))
+
+          //Timepicker
+          $('#datetimepicker').timepicker({
+            showInputs: false
+          })
+
+          $("#prev").click(function(){
+            if(currIndex > 1){
+              const currStep = '#step'+currIndex;
+              currIndex-=1;
+              const nextStep='#step'+currIndex;
+              $(currStep).hide();
+              $(nextStep).show();
+            }
+          })
+
+          $("#next").click(function(){
+            if(currIndex < 4){
+              const currStep = '#step'+currIndex;
+              currIndex+=1;
+              const nextStep='#step'+currIndex;
+              $(currStep).hide();
+              $(nextStep).show();
+            }
+          })
+
+          $("#button_modal").click(function(){
+            var data_target=$("#button_modal").attr("data-target");
+            switch(data_target){
+              case "#modal-one":{
+                $("ul li").removeClass("active startover");
+                $("#one").addClass("active");
+                $("#one").html("1");
+                $("#two").html("2");
+                $("#three").html("3");
+                $("#fore").html("4");
+                $("#five").html("5");
+                $("#six").html("6");
+                $("#seven").html("7");
+                $("#eight").html("8");
+                $("#page-step").html("1/8");
+                break;
+              }
+              case "#modal-two":{
+                $("ul li").removeClass("active startover");
+                $("#two").addClass("active");
+                $("#one").html("1");
+                $("#two").html("2");
+                $("#three").html("3");
+                $("#fore").html("4");
+                $("#five").html("5");
+                $("#six").html("6");
+                $("#seven").html("7");
+                $("#eight").html("8");
+                $("#page-step").html("2/8");
+                break;
+              }
+              case "#modal-three":{
+                $("ul li").removeClass("active startover");
+                $("#three").addClass("active");
+                $("#one").html("1");
+                $("#two").html("2");
+                $("#three").html("3");
+                $("#fore").html("4");
+                $("#five").html("5");
+                $("#six").html("6");
+                $("#seven").html("7");
+                $("#eight").html("8");
+                $("#page-step").html("3/8");
+                break;
+              }
+              case "#modal-fore":{
+                $("ul li").removeClass("active startover");
+                $("#fore").addClass("active");
+                $("#one").html("1");
+                $("#two").html("2");
+                $("#three").html("3");
+                $("#fore").html("4");
+                $("#five").html("5");
+                $("#six").html("6");
+                $("#seven").html("7");
+                $("#eight").html("8");
+                $("#page-step").html("4/8");
+                break;
+              }
+              case "#modal-five":{
+                $("ul li").removeClass("active startover");
+                $("#five").addClass("active");
+                $("#one").html("1");
+                $("#two").html("2");
+                $("#three").html("3");
+                $("#fore").html("4");
+                $("#five").html("5");
+                $("#six").html("6");
+                $("#seven").html("7");
+                $("#eight").html("8");
+                $("#page-step").html("5/8");
+                break;
+              }
+              case "#modal-six":{
+                $("ul li").removeClass("active startover");
+                $("#six").addClass("active");
+                $("#one").html("1");
+                $("#two").html("2");
+                $("#three").html("3");
+                $("#fore").html("4");
+                $("#five").html("5");
+                $("#six").html("6");
+                $("#seven").html("7");
+                $("#eight").html("8");
+                $("#page-step").html("6/8");
+                break;
+              }
+              case "#modal-seven":{
+                $("ul li").removeClass("active startover");
+                $("#seven").addClass("active");
+                $("#one").html("1");
+                $("#two").html("2");
+                $("#three").html("3");
+                $("#fore").html("4");
+                $("#five").html("5");
+                $("#six").html("6");
+                $("#seven").html("7");
+                $("#eight").html("8");
+                $("#page-step").html("7/8");
+                break;
+              }
+              case "#modal-eight":{
+                $("ul li").removeClass("active startover");
+                $("#eight").addClass("active");
+                $("#one").html("1");
+                $("#two").html("2");
+                $("#three").html("3");
+                $("#fore").html("4");
+                $("#five").html("5");
+                $("#six").html("6");
+                $("#seven").html("7");
+                $("#eight").html("8");
+                $("#page-step").html("8/8");
+                break;
+              }
+              case "#modal-review":{
+                $("ul li").addClass("active");
+                $("ul li").html("√");
+                break;
+              }
+              case "#modal-startover":{
+                $("ul li").removeClass("active startover");
+                $("#one").addClass("startover");
+                $("#one").html("×");
+                break;
+              }
+            }
+          })
+
+          $("#button_modal").click();
+
+          $("#btn_one_yes").click(function(){
+            $("#button_modal").attr("data-target","#modal-two");
+            $('#modal-one').modal('hide');
+            $("#button_modal").click();
+          })
+          $("#btn_one_no").click(function(){
+            $("#button_modal").attr("data-target","#modal-startover");
+            $('#modal-one').modal('hide');
+            $("#button_modal").click();
+          })
+
+          $("#btn_two_yes").click(function(){
+            $("#button_modal").attr("data-target","#modal-startover");
+            $('#modal-two').modal('hide');
+            $("#button_modal").click();
+          })
+          $("#btn_two_no").click(function(){
+            $("#button_modal").attr("data-target","#modal-three");
+            $('#modal-two').modal('hide');
+            $("#button_modal").click();
+          })
+
+          $("#btn_three_yes").click(function(){
+            $("#button_modal").attr("data-target","#modal-startover");
+            $('#modal-three').modal('hide');
+            $("#button_modal").click();
+          })
+          $("#btn_three_no").click(function(){
+            $("#button_modal").attr("data-target","#modal-fore");
+            $('#modal-three').modal('hide');
+            $("#button_modal").click();
+          })
+
+          $("#btn_fore_yes").click(function(){
+            $("#button_modal").attr("data-target","#modal-startover");
+            $('#modal-fore').modal('hide');
+            $("#button_modal").click();
+          })
+          $("#btn_fore_no").click(function(){
+            $("#button_modal").attr("data-target","#modal-five");
+            $('#modal-fore').modal('hide');
+            $("#button_modal").click();
+          })
+
+          $("#btn_five_yes").click(function(){
+            $("#button_modal").attr("data-target","#modal-startover");
+            $('#modal-five').modal('hide');
+            $("#button_modal").click();
+          })
+          $("#btn_five_no").click(function(){
+            $("#button_modal").attr("data-target","#modal-six");
+            $('#modal-five').modal('hide');
+            $("#button_modal").click();
+          })
+
+          $("#btn_six_yes").click(function(){
+            $("#button_modal").attr("data-target","#modal-startover");
+            $('#modal-six').modal('hide');
+            $("#button_modal").click();
+          })
+          $("#btn_six_no").click(function(){
+            $("#button_modal").attr("data-target","#modal-seven");
+            $('#modal-six').modal('hide');
+            $("#button_modal").click();
+          })
+
+          $("#btn_seven_yes").click(function(){
+            $("#button_modal").attr("data-target","#modal-startover");
+            $('#modal-seven').modal('hide');
+            $("#button_modal").click();
+          })
+          $("#btn_seven_no").click(function(){
+            
+            $("#button_modal").attr("data-target","#modal-eight");
+            $('#modal-seven').modal('hide');
+            $("#button_modal").click();
+          })
+
+          $("#btn_eight_yes").click(function(){
+            $("#button_modal").attr("data-target","#modal-review");
+            $('#modal-eight').modal('hide');
+            $("#button_modal").click();
+          })
+          $("#btn_eight_no").click(function(){
+            $("#button_modal").attr("data-target","#modal-startover");
+            $('#modal-eight').modal('hide');
+            $("#button_modal").click();
+          })
+
+          // $("#btn_startover_yes").click(function(){
+          //   $("#button_modal").attr("data-target","#modal-one");
+          //   $('#modal-startover').modal('hide');
+          //   $("#button_modal").click();
+          // })
+          $("#btn_startover_no").click(function(){
+            $("#button_modal").attr("data-target","#modal-one");
+            $('#modal-startover').modal('hide');
+            $("#button_modal").click();
+          })
+
+        })
+        function SelectDate(obj){
+          const location = $(obj).parent().siblings('dd').html();
+          bookData.location=location;
+          $("#next").click()
+        }
+        function Book(){
+          $("#next").click()
+          bookData.date=$('#datepicker').val() +' ' + $('#datetimepicker').val();
+          $('#location').html(bookData.location);
+          $('#date').html(bookData.date);
+        }
+        function Commit(){
+          $("#next").click()
+        }
+        function getQueryString(name) {
+          var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+          var r = window.location.search.substr(1).match(reg);
+          if (r != null) return unescape(r[2]); return null;
+        }
+
+
+    </script>
+</body>
+</html>

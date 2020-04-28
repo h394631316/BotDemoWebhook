@@ -1,0 +1,292 @@
+[
+  {
+    "type": "quickreply",
+    "content": {
+      "message": "this is a quick reply response",
+      "items": [
+        {
+          "type": "goToIntent",
+          "text": "1click to trigger test-intent-name",
+          "intentId": "10"
+        },
+        {
+          "type": "contactAgent",
+          "text": "2112345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890"
+        },
+        {
+          "type": "goToIntent",
+          "text": "3click to trigger test-intent-name",
+          "intentId": "10"
+        },
+
+        {
+          "type": "goToIntent",
+          "text": "5click to trigger test-intent-name",
+          "intentId": "10"
+        },
+        {
+          "type": "goToIntent",
+          "text": "6click to trigger test-intent-name",
+          "intentId": "10"
+        },
+        {
+          "type": "goToIntent",
+          "text": "7click to trigger test-intent-name",
+          "intentId": "10"
+        },
+        {
+          "type": "goToIntent",
+          "text": "8click to trigger test-intent-name",
+          "intentId": "10"
+        },
+        {
+          "type": "goToIntent",
+          "text": "9click to trigger test-intent-name",
+          "intentId": "10"
+        },
+        {
+          "type": "goToIntent",
+          "text": "10click to trigger test-intent-name",
+          "intentId": "10"
+        },
+        {
+          "type": "goToIntent",
+          "text": "11click to trigger test-intent-name",
+          "intentId": "10"
+        },
+        {
+          "type": "goToIntent",
+          "text": "12click to trigger test-intent-name",
+          "intentId": "10"
+        }
+
+      ]
+    }
+  },
+  {
+    "type": "text",
+    "content": {
+      "message": "curw",
+      "links": [
+        {
+          "type": "hyperlink",
+          "startPosition": "1",
+          "endPosition": "2",
+          "ifPushPage": false,
+          "url": "https://www.baidu.com",
+          "openIn": "currentWindow"
+        }
+      ]
+    }
+  },
+  {
+    "type": "text",
+    "content": {
+      "message": "neww",
+      "links": [
+        {
+          "type": "hyperlink",
+          "startPosition": "0",
+          "endPosition": "1",
+          "ifPushPage": true,
+          "url": "https://www.baidu.com",
+          "openIn": "newWindow"
+        }
+      ]
+    }
+  },
+  {
+    "type": "text",
+    "content": {
+      "message": "pushwin",
+      "links": [
+        {
+          "type": "hyperlink",
+          "startPosition": "0",
+          "endPosition": "1",
+          "ifPushPage": true,
+          "url": "https://www.baidu.com",
+          "openIn": "sideWindow"
+        }
+      ]
+    }
+  },
+  {
+    "type": "text",
+    "content": {
+      "message": "side window",
+      "links": [
+        {
+          "type": "hyperlink",
+          "startPosition": "0",
+          "endPosition": "1",
+          "ifPushPage": true,
+          "url": "https://www.comm100.com",
+          "openIn": "sideWindow"
+        }
+      ]
+    }
+  },
+  {
+    "type": "text",
+    "content": {
+      "message": "this is a go to intent message",
+      "links": [
+        {
+          "type": "goToIntent",
+          "startPosition": 10,
+          "endPosition": 17,
+          "intentId": "10",
+          "displayText": "test-displayText"
+        }
+      ]
+    }
+  },
+  {
+    "type": "image",
+    "content": {
+      "description": "description of the image",
+      "url": "http://pic3.nipic.com/20090702/918855_174429094_2.jpg"
+    }
+  },
+  {
+    "type": "video",
+    "content": {
+      "url": "http://pic3.nipic.com/20090702/918855_174429094_2.jpg"
+    }
+  },
+  {
+    "type": "quickreply",
+    "content": {
+      "message": "this is a quick reply response",
+      "items": [
+        {
+          "type": "goToIntent",
+          "text": "click to trigger test-intent-name",
+          "intentId": "10"
+        },
+        {
+          "type": "contactAgent",
+          "text": "click to contact agent"
+        }
+      ]
+    }
+  },
+  {
+    "type": "button",
+    "content": {
+      "message": "this is a button response",
+      "items": [
+        {
+          "type": "goToIntent",
+          "text": "click to trigger test-intent-name",
+          "intentId": "10"
+        },
+        {
+          "type": "hyperlink",
+          "text": "click to open this url in web page",
+          "url": "https://www.comm100.com/",
+          "openIn": "currentWindow"
+        },
+        {
+          "type": "webview",
+          "text": "click to open this url in web view",
+          "url": "https://www.baidu.com",
+          "webviewOpenStyle": "full"
+        }
+      ]
+    }
+  },
+  {
+    "type": "text",
+    "content": {
+      "message": "this is a plain message"
+    }
+  },
+  {
+    "type": "text",
+    "content": {
+      "message": "this is a web link message",
+      "links": [
+        {
+          "type": "hyperlink",
+          "startPosition": 10,
+          "endPosition": 17,
+          "ifPushPage": true,
+          "url": "https://www.baidu.com",
+          "openIn": "currentWindow"
+        }
+      ]
+    }
+  },
+  {
+    "type": "text",
+    "content": {
+      "message": "this is a go to intent message",
+      "links": [
+        {
+          "type": "goToIntent",
+          "startPosition": 10,
+          "endPosition": 17,
+          "intentId": "10",
+          "displayText": "test-displayText"
+        }
+      ]
+    }
+  },
+  {
+    "type": "image",
+    "content": {
+      "description": "description of the image",
+      "url": "http://pic3.nipic.com/20090702/918855_174429094_2.jpg"
+    }
+  },
+  {
+    "type": "video",
+    "content": {
+      "url": "http://pic3.nipic.com/20090702/918855_174429094_2.jpg"
+    }
+  },
+  {
+    "type": "quickreply",
+    "content": {
+      "message": "this is a quick reply response",
+      "items": [
+        {
+          "type": "goToIntent",
+          "text": "click to trigger test-intent-name",
+          "intentId": "10"
+        },
+        {
+          "type": "contactAgent",
+          "text": "click to contact agent"
+        }
+      ]
+    }
+  },
+  {
+    "type": "button",
+    "content": {
+      "message": "this is a button response",
+      "items": [
+        {
+          "type": "goToIntent",
+          "text": "click to trigger test-intent-name",
+          "intentId": "10"
+        },
+        {
+          "type": "hyperlink",
+          "text": "click to open this url in web page",
+          "url": "https://www.baidu.com",
+          "openIn": "currentWindow"
+        },
+        {
+          "type": "webview",
+          "text": "click to open this url in web view",
+          "url": "https://www.baidu.com",
+          "webviewOpenStyle": "full"
+        }
+      ]
+    }
+  }
+]

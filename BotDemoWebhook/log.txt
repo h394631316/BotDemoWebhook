@@ -1,0 +1,902 @@
+﻿input:{
+  "SessionId": "123",
+  "CampaignId": "123",
+  "Question": "123",
+  "QuestionId": "123",
+  "IntentId": "123",
+  "BotId": "123",
+  "ChatId": "123",
+  "VisitorId": "123",
+  "FormValues": [
+    {
+      "id": 1,
+      "label": "From account type",
+      "value": "Checking"
+    },
+    {
+      "id": 1,
+      "label": "To account type",
+      "value": "Savings"
+    },
+    {
+      "id": 1,
+      "label": "Amount",
+      "value": "10"
+    },
+    {
+      "id": 1,
+      "label": "Payee",
+      "value": "William"
+    },
+    {
+      "id": 1,
+      "label": "Your new address",
+      "value": "changsha"
+    },
+    {
+      "id": 1,
+      "label": "Your new phone",
+      "value": "12355658898"
+    },
+    {
+      "id": 1,
+      "label": "Account number",
+      "value": "1111112"
+    },
+    {
+      "id": 1,
+      "label": "Security question #1",
+      "value": "23"
+    },
+    {
+      "id": 1,
+      "label": "Security question #2",
+      "value": "234"
+    },
+    {
+      "id": 1,
+      "label": "New password",
+      "value": "0000"
+    }
+  ],
+  "Visitor": {
+    "ssoid": "Kevin",
+    "longitude": 123231.2323,
+    "latitude": 213213213.1232
+  }
+}output:{"messages":[{"text":"Successful transfer"}]}input:{
+  "SessionId": "123",
+  "CampaignId": "123",
+  "Question": "123",
+  "QuestionId": "123",
+  "IntentId": "123",
+  "BotId": "123",
+  "ChatId": "123",
+  "VisitorId": "123",
+  "FormValues": [
+    {
+      "id": 1,
+      "label": "From account type",
+      "value": "Checking"
+    },
+    {
+      "id": 1,
+      "label": "To account type",
+      "value": "Savings"
+    },
+    {
+      "id": 1,
+      "label": "Amount",
+      "value": "10"
+    },
+    {
+      "id": 1,
+      "label": "Payee",
+      "value": "William"
+    },
+    {
+      "id": 1,
+      "label": "Your new address",
+      "value": "changsha"
+    },
+    {
+      "id": 1,
+      "label": "Your new phone",
+      "value": "12355658898"
+    },
+    {
+      "id": 1,
+      "label": "Account number",
+      "value": "1111112"
+    },
+    {
+      "id": 1,
+      "label": "Security question #1",
+      "value": "23"
+    },
+    {
+      "id": 1,
+      "label": "Security question #2",
+      "value": "234"
+    },
+    {
+      "id": 1,
+      "label": "New password",
+      "value": "0000"
+    }
+  ],
+  "Visitor": {
+    "ssoid": "Kevin",
+    "longitude": 123231.2323,
+    "latitude": 213213213.1232
+  }
+}output:{"messages":[{"text":"Successful transfer"}]}input:{
+"eventType":"formSubmitted",
+"chatId":"",
+"campaignId":1,
+"visitorInfo":{
+  "SessionId": "123",
+  "CampaignId": "123",
+  "Question": "123",
+  "QuestionId": "123",
+  "IntentId": "123",
+  "BotId": "123",
+  "ChatId": "123",
+  "VisitorId": "123",
+  "ssoid": "xxx",
+  "longitude": 123231.2323,
+  "latitude": 213213213.1232,
+  "FormValues": [
+    {
+      "id": 1,
+      "label": "xxx",
+      "value": "12"
+    },
+    {
+      "id": 1,
+      "label": "yyy",
+      "value": "12"
+    }
+  ]
+}
+}output:[
+  {
+    "type": "quickreply",
+    "content": {
+      "message": "this is a quick reply response",
+      "items": [
+        {
+          "type": "goToIntent",
+          "text": "1click to trigger test-intent-name",
+          "intentId": "10"
+        },
+        {
+          "type": "contactAgent",
+          "text": "2112345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890"
+        },
+        {
+          "type": "goToIntent",
+          "text": "3click to trigger test-intent-name",
+          "intentId": "10"
+        },
+
+        {
+          "type": "goToIntent",
+          "text": "5click to trigger test-intent-name",
+          "intentId": "10"
+        },
+        {
+          "type": "goToIntent",
+          "text": "6click to trigger test-intent-name",
+          "intentId": "10"
+        },
+        {
+          "type": "goToIntent",
+          "text": "7click to trigger test-intent-name",
+          "intentId": "10"
+        },
+        {
+          "type": "goToIntent",
+          "text": "8click to trigger test-intent-name",
+          "intentId": "10"
+        },
+        {
+          "type": "goToIntent",
+          "text": "9click to trigger test-intent-name",
+          "intentId": "10"
+        },
+        {
+          "type": "goToIntent",
+          "text": "10click to trigger test-intent-name",
+          "intentId": "10"
+        },
+        {
+          "type": "goToIntent",
+          "text": "11click to trigger test-intent-name",
+          "intentId": "10"
+        },
+        {
+          "type": "goToIntent",
+          "text": "12click to trigger test-intent-name",
+          "intentId": "10"
+        }
+
+      ]
+    }
+  },
+  {
+    "type": "text",
+    "content": {
+      "message": "curw",
+      "links": [
+        {
+          "type": "hyperlink",
+          "startPosition": "1",
+          "endPosition": "2",
+          "ifPushPage": false,
+          "url": "https://www.baidu.com",
+          "openIn": "currentWindow"
+        }
+      ]
+    }
+  },
+  {
+    "type": "text",
+    "content": {
+      "message": "neww",
+      "links": [
+        {
+          "type": "hyperlink",
+          "startPosition": "0",
+          "endPosition": "1",
+          "ifPushPage": true,
+          "url": "https://www.baidu.com",
+          "openIn": "newWindow"
+        }
+      ]
+    }
+  },
+  {
+    "type": "text",
+    "content": {
+      "message": "pushwin",
+      "links": [
+        {
+          "type": "hyperlink",
+          "startPosition": "0",
+          "endPosition": "1",
+          "ifPushPage": true,
+          "url": "https://www.baidu.com",
+          "openIn": "sideWindow"
+        }
+      ]
+    }
+  },
+  {
+    "type": "text",
+    "content": {
+      "message": "side window",
+      "links": [
+        {
+          "type": "hyperlink",
+          "startPosition": "0",
+          "endPosition": "1",
+          "ifPushPage": true,
+          "url": "https://www.comm100.com",
+          "openIn": "sideWindow"
+        }
+      ]
+    }
+  },
+  {
+    "type": "text",
+    "content": {
+      "message": "this is a go to intent message",
+      "links": [
+        {
+          "type": "goToIntent",
+          "startPosition": 10,
+          "endPosition": 17,
+          "intentId": "10",
+          "displayText": "test-displayText"
+        }
+      ]
+    }
+  },
+  {
+    "type": "image",
+    "content": {
+      "description": "description of the image",
+      "url": "http://pic3.nipic.com/20090702/918855_174429094_2.jpg"
+    }
+  },
+  {
+    "type": "video",
+    "content": {
+      "url": "http://pic3.nipic.com/20090702/918855_174429094_2.jpg"
+    }
+  },
+  {
+    "type": "quickreply",
+    "content": {
+      "message": "this is a quick reply response",
+      "items": [
+        {
+          "type": "goToIntent",
+          "text": "click to trigger test-intent-name",
+          "intentId": "10"
+        },
+        {
+          "type": "contactAgent",
+          "text": "click to contact agent"
+        }
+      ]
+    }
+  },
+  {
+    "type": "button",
+    "content": {
+      "message": "this is a button response",
+      "items": [
+        {
+          "type": "goToIntent",
+          "text": "click to trigger test-intent-name",
+          "intentId": "10"
+        },
+        {
+          "type": "hyperlink",
+          "text": "click to open this url in web page",
+          "url": "https://www.comm100.com/",
+          "openIn": "currentWindow"
+        },
+        {
+          "type": "webview",
+          "text": "click to open this url in web view",
+          "url": "https://www.baidu.com",
+          "webviewOpenStyle": "full"
+        }
+      ]
+    }
+  },
+  {
+    "type": "text",
+    "content": {
+      "message": "this is a plain message"
+    }
+  },
+  {
+    "type": "text",
+    "content": {
+      "message": "this is a web link message",
+      "links": [
+        {
+          "type": "hyperlink",
+          "startPosition": 10,
+          "endPosition": 17,
+          "ifPushPage": true,
+          "url": "https://www.baidu.com",
+          "openIn": "currentWindow"
+        }
+      ]
+    }
+  },
+  {
+    "type": "text",
+    "content": {
+      "message": "this is a go to intent message",
+      "links": [
+        {
+          "type": "goToIntent",
+          "startPosition": 10,
+          "endPosition": 17,
+          "intentId": "10",
+          "displayText": "test-displayText"
+        }
+      ]
+    }
+  },
+  {
+    "type": "image",
+    "content": {
+      "description": "description of the image",
+      "url": "http://pic3.nipic.com/20090702/918855_174429094_2.jpg"
+    }
+  },
+  {
+    "type": "video",
+    "content": {
+      "url": "http://pic3.nipic.com/20090702/918855_174429094_2.jpg"
+    }
+  },
+  {
+    "type": "quickreply",
+    "content": {
+      "message": "this is a quick reply response",
+      "items": [
+        {
+          "type": "goToIntent",
+          "text": "click to trigger test-intent-name",
+          "intentId": "10"
+        },
+        {
+          "type": "contactAgent",
+          "text": "click to contact agent"
+        }
+      ]
+    }
+  },
+  {
+    "type": "button",
+    "content": {
+      "message": "this is a button response",
+      "items": [
+        {
+          "type": "goToIntent",
+          "text": "click to trigger test-intent-name",
+          "intentId": "10"
+        },
+        {
+          "type": "hyperlink",
+          "text": "click to open this url in web page",
+          "url": "https://www.baidu.com",
+          "openIn": "currentWindow"
+        },
+        {
+          "type": "webview",
+          "text": "click to open this url in web view",
+          "url": "https://www.baidu.com",
+          "webviewOpenStyle": "full"
+        }
+      ]
+    }
+  }
+]input:{
+  "SessionId": "123",
+  "CampaignId": "123",
+  "Question": "123",
+  "QuestionId": "123",
+  "IntentId": "123",
+  "BotId": "123",
+  "ChatId": "123",
+  "VisitorId": "123",
+  "FormValues": [
+    {
+      "id": 1,
+      "label": "From account type",
+      "value": "Checking"
+    },
+    {
+      "id": 1,
+      "label": "To account type",
+      "value": "Savings"
+    },
+    {
+      "id": 1,
+      "label": "Amount",
+      "value": "10"
+    },
+    {
+      "id": 1,
+      "label": "Payee",
+      "value": "William"
+    },
+    {
+      "id": 1,
+      "label": "Your new address",
+      "value": "changsha"
+    },
+    {
+      "id": 1,
+      "label": "Your new phone",
+      "value": "12355658898"
+    },
+    {
+      "id": 1,
+      "label": "Account number",
+      "value": "1111112"
+    },
+    {
+      "id": 1,
+      "label": "Security question #1",
+      "value": "23"
+    },
+    {
+      "id": 1,
+      "label": "Security question #2",
+      "value": "234"
+    },
+    {
+      "id": 1,
+      "label": "New password",
+      "value": "0000"
+    }
+  ],
+  "Visitor": {
+    "ssoid": "Kevin",
+    "longitude": -122.46344175330353,
+    "latitude": 48.76306404434952
+  }
+}output:{"messages":[{"text":"The nearest branch to you is: 2410 James St, Bellingham, WA 98225"}]}input:{
+  "SessionId": "123",
+  "CampaignId": "123",
+  "Question": "123",
+  "QuestionId": "123",
+  "IntentId": "123",
+  "BotId": "123",
+  "ChatId": "123",
+  "VisitorId": "123",
+  "FormValues": [
+    {
+      "id": 1,
+      "label": "From account type",
+      "value": "Checking"
+    },
+    {
+      "id": 1,
+      "label": "To account type",
+      "value": "Savings"
+    },
+    {
+      "id": 1,
+      "label": "Amount",
+      "value": "10"
+    },
+    {
+      "id": 1,
+      "label": "Payee",
+      "value": "William"
+    },
+    {
+      "id": 1,
+      "label": "Your new address",
+      "value": "changsha"
+    },
+    {
+      "id": 1,
+      "label": "Your new phone",
+      "value": "12355658898"
+    },
+    {
+      "id": 1,
+      "label": "Account number",
+      "value": "1111112"
+    },
+    {
+      "id": 1,
+      "label": "Security question #1",
+      "value": "23"
+    },
+    {
+      "id": 1,
+      "label": "Security question #2",
+      "value": "234"
+    },
+    {
+      "id": 1,
+      "label": "New password",
+      "value": "0000"
+    }
+  ],
+  "Visitor": {
+    "ssoid": "Kevin",
+    "longitude": -122.41023940000002,
+    "latitude": 48.471856100000025
+  }
+}output:{"messages":[{"text":"The nearest ATM location to you is: 15400 Airport Dr, Burlington, WA 98233"}]}input:{
+	"formValues":[
+		{
+			"label":"flavor",
+			"value":"Pepperoni"
+		},
+		{
+			"label":"size",
+			"value":"Small"
+		},
+		]
+}exception:Could not find file 'D:\工作\项目\WebApplication1\WebApplication7\HappyPizzaStorageInfo.json'.input:{
+	"formValues":[
+		{
+			"label":"flavor",
+			"value":"Pepperoni"
+		},
+		{
+			"label":"size",
+			"value":"Small"
+		},
+		{
+			"label":"type",
+			"value":"Thin"
+		}
+		]
+}exception:Could not find file 'D:\工作\项目\WebApplication1\WebApplication7\HappyPizzaStorageInfo.json'.input:{
+	"formValues":[
+		{
+			"label":"flavor",
+			"value":"Pepperoni"
+		},
+		{
+			"label":"size",
+			"value":"Small"
+		},
+		{
+			"label":"type",
+			"value":"Thin"
+		}
+		]
+}exception:Could not find file 'D:\工作\项目\WebApplication1\WebApplication7\HappyPizzaStorageInfo.json'.input:{
+	"formValues":[
+		{
+			"label":"flavor",
+			"value":"Pepperoni"
+		},
+		{
+			"label":"size",
+			"value":"Small"
+		},
+		{
+			"label":"type",
+			"value":"Thin"
+		}
+		]
+}output:{"messages":[{"text":"[{\r\n  'type': 'text',\r\n  'content': {\r\n    'message': 'Brilliant! Just click this link to enter in your payment details and place your order.',\r\n    'links': [\r\n      {\r\n        'type': 'hyperlink',\r\n        'startPosition': 16,\r\n        'endPosition': 21,\r\n        'ifPushPage': true,\r\n        'url': 'https://www.baidu.com',\r\n        'openIn': 'currentWindow'\r\n      }\r\n    ]\r\n  }\r\n}]"}]}input:{
+	"formValues":[
+		{
+			"label":"flavor",
+			"value":"Pepperoni"
+		},
+		{
+			"label":"size",
+			"value":"Small"
+		},
+		{
+			"label":"type",
+			"value":"Thin"
+		}
+		]
+}exception:Could not find a part of the path 'C:\Program Files (x86)\IIS Express\~\HappyPizzaStorageInfo.json'.input:{
+	"formValues":[
+		{
+			"label":"flavor",
+			"value":"Pepperoni"
+		},
+		{
+			"label":"size",
+			"value":"Small"
+		},
+		{
+			"label":"type",
+			"value":"Thin"
+		}
+		]
+}exception:Could not find a part of the path 'C:\Program Files (x86)\IIS Express\~\HappyPizzaStorageInfo.json'.input:{
+	"formValues":[
+		{
+			"label":"flavor",
+			"value":"Pepperoni"
+		},
+		{
+			"label":"size",
+			"value":"Small"
+		},
+		{
+			"label":"type",
+			"value":"Thin"
+		}
+		]
+}input:{
+	"formValues":[
+		{
+			"label":"flavor",
+			"value":"Pepperoni"
+		},
+		{
+			"label":"size",
+			"value":"Small"
+		},
+		{
+			"label":"type",
+			"value":"Thin"
+		}
+		]
+}input:{
+	"formValues":[
+		{
+			"label":"flavor",
+			"value":"Pepperoni"
+		},
+		{
+			"label":"size",
+			"value":"Small"
+		},
+		{
+			"label":"type",
+			"value":"Thin"
+		}
+		]
+}output:{"messages":[{"text":"[{\r\n  'type': 'text',\r\n  'content': {\r\n    'message': 'Brilliant! Just click this link to enter in your payment details and place your order.',\r\n    'links': [\r\n      {\r\n        'type': 'hyperlink',\r\n        'startPosition': 16,\r\n        'endPosition': 21,\r\n        'ifPushPage': true,\r\n        'url': 'https://www.baidu.com',\r\n        'openIn': 'currentWindow'\r\n      }\r\n    ]\r\n  }\r\n}]"}]}input:{
+	"formValues":[
+		{
+			"label":"flavor",
+			"value":"Pepperoni"
+		},
+		{
+			"label":"size",
+			"value":"Small"
+		},
+		{
+			"label":"type",
+			"value":"Thin"
+		}
+		]
+}output:"[{\r\n  'type': 'text',\r\n  'content': {\r\n    'message': 'Brilliant! Just click this link to enter in your payment details and place your order.',\r\n    'links': [\r\n      {\r\n        'type': 'hyperlink',\r\n        'startPosition': 16,\r\n        'endPosition': 21,\r\n        'ifPushPage': true,\r\n        'url': 'https://www.baidu.com',\r\n        'openIn': 'currentWindow'\r\n      }\r\n    ]\r\n  }\r\n}]"input:{
+	"formValues":[
+		{
+			"label":"flavor",
+			"value":"Pepperoni"
+		},
+		{
+			"label":"size",
+			"value":"Small"
+		},
+		{
+			"label":"type",
+			"value":"Thin"
+		}
+		]
+}output:"[{\r\n  'type': 'text',\r\n  'content': {\r\n    'message': 'Brilliant! Just click this link to enter in your payment details and place your order.',\r\n    'links': [\r\n      {\r\n        'type': 'hyperlink',\r\n        'startPosition': 16,\r\n        'endPosition': 21,\r\n        'ifPushPage': true,\r\n        'url': 'https://www.baidu.com',\r\n        'openIn': 'currentWindow'\r\n      }\r\n    ]\r\n  }\r\n}]"input:{
+	"formValues":[
+		{
+			"label":"flavor",
+			"value":"Pepperoni"
+		},
+		{
+			"label":"size",
+			"value":"Small"
+		},
+		{
+			"label":"type",
+			"value":"Thin"
+		}
+		]
+}output:"[{\r\n  'type': 'text',\r\n  'content': {\r\n    'message': 'Brilliant! Just click this link to enter in your payment details and place your order.',\r\n    'links': [\r\n      {\r\n        'type': 'hyperlink',\r\n        'startPosition': 16,\r\n        'endPosition': 21,\r\n        'ifPushPage': true,\r\n        'url': '::1/index3.html?orderNo=0fda6e',\r\n        'openIn': 'currentWindow'\r\n      }\r\n    ]\r\n  }\r\n}]"input:{
+	"formValues":[
+		{
+			"label":"flavor",
+			"value":"Pepperoni"
+		},
+		{
+			"label":"size",
+			"value":"Small"
+		},
+		{
+			"label":"type",
+			"value":"Thin"
+		}
+		]
+}output:"[{\r\n  'type': 'text',\r\n  'content': {\r\n    'message': 'Brilliant! Just click this link to enter in your payment details and place your order.',\r\n    'links': [\r\n      {\r\n        'type': 'hyperlink',\r\n        'startPosition': 16,\r\n        'endPosition': 21,\r\n        'ifPushPage': true,\r\n        'url': '/index3.html?orderNo=38a53d',\r\n        'openIn': 'currentWindow'\r\n      }\r\n    ]\r\n  }\r\n}]"input:{
+	"formValues":[
+		{
+			"label":"flavor",
+			"value":"Pepperoni"
+		},
+		{
+			"label":"size",
+			"value":"Small"
+		},
+		{
+			"label":"type",
+			"value":"Thin"
+		}
+		]
+}output:"[{\r\n  'type': 'text',\r\n  'content': {\r\n    'message': 'Brilliant! Just click this link to enter in your payment details and place your order.',\r\n    'links': [\r\n      {\r\n        'type': 'hyperlink',\r\n        'startPosition': 16,\r\n        'endPosition': 21,\r\n        'ifPushPage': true,\r\n        'url': 'http://localhost:62137//index3.html?orderNo=38b6e6',\r\n        'openIn': 'currentWindow'\r\n      }\r\n    ]\r\n  }\r\n}]"input:{
+	"formValues":[
+		{
+			"label":"flavor",
+			"value":"Pepperoni"
+		},
+		{
+			"label":"size",
+			"value":"Small"
+		},
+		{
+			"label":"type",
+			"value":"Thin"
+		}
+		]
+}output:"[{\r\n  'type': 'text',\r\n  'content': {\r\n    'message': 'Brilliant! Just click this link to enter in your payment details and place your order.',\r\n    'links': [\r\n      {\r\n        'type': 'hyperlink',\r\n        'startPosition': 16,\r\n        'endPosition': 21,\r\n        'ifPushPage': true,\r\n        'url': 'http://localhost:62137//index3.html?orderNo=7ad945',\r\n        'openIn': 'currentWindow'\r\n      }\r\n    ]\r\n  }\r\n}]"input:{
+	"formValues":[
+		{
+			"label":"flavor",
+			"value":"Pepperoni"
+		},
+		{
+			"label":"size",
+			"value":"Small"
+		},
+		{
+			"label":"type",
+			"value":"Thin"
+		}
+		]
+}output:"[{\r\n  'type': 'text',\r\n  'content': {\r\n    'message': 'Brilliant! Just click this link to enter in your payment details and place your order.',\r\n    'links': [\r\n      {\r\n        'type': 'hyperlink',\r\n        'startPosition': 16,\r\n        'endPosition': 21,\r\n        'ifPushPage': true,\r\n        'url': 'http://localhost:62137//index3.html?orderNo=e9c9bd',\r\n        'openIn': 'currentWindow'\r\n      }\r\n    ]\r\n  }\r\n}]"input:{
+	"formValues":[
+		{
+			"label":"flavor",
+			"value":"Pepperoni"
+		},
+		{
+			"label":"size",
+			"value":"Small"
+		},
+		{
+			"label":"type",
+			"value":"Thin"
+		}
+		]
+}output:"[{\r\n  'type': 'text',\r\n  'content': {\r\n    'message': 'Brilliant! Just click this link to enter in your payment details and place your order.',\r\n    'links': [\r\n      {\r\n        'type': 'hyperlink',\r\n        'startPosition': 16,\r\n        'endPosition': 21,\r\n        'ifPushPage': true,\r\n        'url': 'http://localhost:62137/index3.html?orderNo=955d93',\r\n        'openIn': 'currentWindow'\r\n      }\r\n    ]\r\n  }\r\n}]"input:{
+	"formValues":[
+		{
+			"label":"flavor",
+			"value":"Pepperoni"
+		},
+		{
+			"label":"size",
+			"value":"Small"
+		},
+		{
+			"label":"type",
+			"value":"Thin"
+		}
+		]
+}output:"[{\r\n  'type': 'text',\r\n  'content': {\r\n    'message': 'Brilliant! Just click this link to enter in your payment details and place your order.',\r\n    'links': [\r\n      {\r\n        'type': 'hyperlink',\r\n        'startPosition': 16,\r\n        'endPosition': 21,\r\n        'ifPushPage': true,\r\n        'url': 'http://localhost:62137/DonorDemo/index3.html?orderNo=cb3b11',\r\n        'openIn': 'currentWindow'\r\n      }\r\n    ]\r\n  }\r\n}]"input:formValues%5B0%5D%5Blabel%5D=orderNo&formValues%5B0%5D%5Bvalue%5D=490995&formValues%5B1%5D%5Blabel%5D=payment&formValues%5B1%5D%5Bvalue%5D=Cashexception:Error parsing boolean value. Path '', line 1, position 1.input:formValues%5B0%5D%5Blabel%5D=orderNo&formValues%5B0%5D%5Bvalue%5D=490995&formValues%5B1%5D%5Blabel%5D=payment&formValues%5B1%5D%5Bvalue%5D=Cashexception:Error parsing boolean value. Path '', line 1, position 1.input:{"formValues":[{"label":"orderNo","value":"490995"},{"label":"payment","value":"Cash"}]}output:""input:{
+	"formValues":[
+		{
+			"label":"flavor",
+			"value":"Pepperoni"
+		},
+		{
+			"label":"size",
+			"value":"Small"
+		},
+		{
+			"label":"type",
+			"value":"Thin"
+		}
+		]
+}output:"[{\r\n  'type': 'text',\r\n  'content': {\r\n    'message': 'Brilliant! Just click this link to enter in your payment details and place your order.',\r\n    'links': [\r\n      {\r\n        'type': 'hyperlink',\r\n        'startPosition': 16,\r\n        'endPosition': 21,\r\n        'ifPushPage': true,\r\n        'url': 'http://localhost:62137/DonorDemo/index3.html?orderNo=ef1ee1',\r\n        'openIn': 'currentWindow'\r\n      }\r\n    ]\r\n  }\r\n}]"input:{"formValues":[{"label":"orderNo","value":"ef1ee1"},{"label":"payment","value":"Credit Card"}]}output:""input:{
+	"formValues":[
+		{
+			"label":"orderNo",
+			"value":"ef1ee1"
+		}
+		]
+}output:"[{\r\n  'type': 'text',\r\n  'content': {\r\n    'message': 'I can see your order is out for delivery now and your delivery person will be in touch shortly if there are any problems.'\r\n  }\r\n}]"input:{
+	"formValues":[
+		{
+			"label":"flavor",
+			"value":"Pepperoni"
+		},
+		{
+			"label":"size",
+			"value":"Small"
+		},
+		{
+			"label":"type",
+			"value":"Thin"
+		}
+		]
+}output:"[{\r\n  'type': 'text',\r\n  'content': {\r\n    'message': 'Brilliant! Just click this link to enter in your payment details and place your order.',\r\n    'links': [\r\n      {\r\n        'type': 'hyperlink',\r\n        'startPosition': 16,\r\n        'endPosition': 21,\r\n        'ifPushPage': true,\r\n        'url': 'http://localhost:62137/DonorDemo/index3.html?orderNo=addf8e',\r\n        'openIn': 'currentWindow'\r\n      }\r\n    ]\r\n  }\r\n}]"input:{"formValues":[{"label":"orderNo","value":"addf8e"},{"label":"payment","value":"Credit Card"}]}output:""input:{
+	"formValues":[
+		{
+			"label":"orderNo",
+			"value":"addf8e"
+		}
+		]
+}output:"[{\r\n  'type': 'text',\r\n  'content': {\r\n    'message': 'I can see your order is out for delivery now and your delivery person will be in touch shortly if there are any problems.'\r\n  }\r\n}]"input:{
+	"formValues":[
+		{
+			"label":"orderNo",
+			"value":"addf8exs"
+		}
+		]
+}output:"[{\r\n  'type': 'text',\r\n  'content': {\r\n    'message': 'Sorry, the order does not exist.'\r\n  }\r\n}]"
