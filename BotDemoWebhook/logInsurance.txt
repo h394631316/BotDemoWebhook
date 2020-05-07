@@ -1,0 +1,197 @@
+﻿2020/5/7 1:42:15 PM
+input:{
+	"formValues":[
+		{
+			"label":"number",
+			"value":"2846756"
+		},
+		{
+			"label":"name",
+			"value":"Steve Jones"
+		},
+		{
+			"label":"birth",
+			"value":"15/03/1983"
+		}
+		]
+}
+2020/5/7 1:42:15 PM
+exception:String was not recognized as a valid DateTime.
+2020/5/7 1:42:58 PM
+input:{
+	"formValues":[
+		{
+			"label":"number",
+			"value":"2846756"
+		},
+		{
+			"label":"name",
+			"value":"Steve Jones"
+		},
+		{
+			"label":"birth",
+			"value":"15/03/1983"
+		}
+		]
+}
+2020/5/7 1:44:31 PM
+input:{
+	"formValues":[
+		{
+			"label":"number",
+			"value":"2846756"
+		},
+		{
+			"label":"name",
+			"value":"Steve Jones"
+		},
+		{
+			"label":"birth",
+			"value":"15/03/1983"
+		}
+		]
+}
+2020/5/7 1:51:20 PM
+input:{
+	"formValues":[
+		{
+			"label":"number",
+			"value":"2846756"
+		},
+		{
+			"label":"name",
+			"value":"Steve Jones"
+		},
+		{
+			"label":"birth",
+			"value":"15/03/1983"
+		}
+		]
+}
+2020/5/7 1:54:12 PM
+input:{
+	"formValues":[
+		{
+			"label":"number",
+			"value":"2846756"
+		},
+		{
+			"label":"name",
+			"value":"Steve Jones"
+		},
+		{
+			"label":"birth",
+			"value":"15/03/1983"
+		}
+		]
+}
+2020/5/7 1:54:43 PM
+exception:String was not recognized as a valid DateTime.
+2020/5/7 1:55:19 PM
+input:{
+	"formValues":[
+		{
+			"label":"number",
+			"value":"2846756"
+		},
+		{
+			"label":"name",
+			"value":"Steve Jones"
+		},
+		{
+			"label":"birth",
+			"value":"1983-03-15"
+		}
+		]
+}
+2020/5/7 1:55:47 PM
+
+ output:"[{\r\n  'type': 'text',\r\n  'content': {\r\n    'message': 'I can confirm your claim will be paid on the 15th April. Your claim amount is $656.98.'\r\n  }\r\n}]"
+2020/5/7 1:57:34 PM
+input:{
+	"formValues":[
+		{
+			"label":"number",
+			"value":"2846756"
+		},
+		{
+			"label":"name",
+			"value":"Steve Jones"
+		},
+		{
+			"label":"birth",
+			"value":"15/03/1983"
+		}
+		]
+}
+2020/5/7 1:57:41 PM
+
+ output:"[{\r\n  'type': 'text',\r\n  'content': {\r\n    'message': 'I can confirm your claim will be paid on the 15th April. Your claim amount is $656.98.'\r\n  }\r\n}]"
+2020/5/7 1:57:46 PM
+input:{
+	"formValues":[
+		{
+			"label":"number",
+			"value":"2846756"
+		},
+		{
+			"label":"name",
+			"value":"Steve Jones"
+		},
+		{
+			"label":"birth",
+			"value":"15/03/19833"
+		}
+		]
+}
+2020/5/7 1:57:46 PM
+
+ output:"[{\r\n  'type': 'text',\r\n  'content': {\r\n    'message': 'Your number or name or birth is wrong.'\r\n  }\r\n}]"
+2020/5/7 1:59:16 PM
+input:{
+	"formValues":[
+		{
+			"label":"number",
+			"value":"2846756"
+		},
+		{
+			"label":"name",
+			"value":"Steve Jones"
+		},
+		{
+			"label":"birth",
+			"value":"15/03/1983"
+		},
+		{
+			"label":"organisation",
+			"value":"Comm100"
+		}
+		]
+}
+2020/5/7 1:59:16 PM
+
+ output:"[{\r\n  'type': 'text',\r\n  'content': {\r\n    'message': 'You will be covered 80% up to a total of $25,000.'\r\n  }\r\n}]"
+2020/5/7 1:59:28 PM
+input:{
+	"formValues":[
+		{
+			"label":"number",
+			"value":"2846757"
+		},
+		{
+			"label":"name",
+			"value":"Steve Jones"
+		},
+		{
+			"label":"birth",
+			"value":"15/03/1983"
+		},
+		{
+			"label":"organisation",
+			"value":"Comm100"
+		}
+		]
+}
+2020/5/7 1:59:28 PM
+
+ output:"[{\r\n  'type': 'text',\r\n  'content': {\r\n    'message': 'You will be covered 80% up to a total of $26,000.'\r\n  }\r\n}]"

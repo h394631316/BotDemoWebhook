@@ -273,6 +273,7 @@
     <Content Include="DonorDemo\eligibility-question-age.jpg" />
     <Content Include="DonorDemo\favicon.ico" />
     <Content Include="DonorDemo\index.html" />
+    <Content Include="DonorDemo\index.insurance.html" />
     <Content Include="DonorDemo\index2.html" />
     <Content Include="DonorDemo\index3.html" />
     <Content Include="DonorDemo\pizza.jpg" />
@@ -410,6 +411,7 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="bankSotrageInfo.ashx" />
+    <Content Include="readme.txt" />
     <Content Include="ThirdPartBotWebHook.ashx" />
     <Content Include="HappyPizzaBookService.ashx" />
     <Content Include="DonorDemo\bower_components\bootstrap-datepicker\dist\css\bootstrap-datepicker.css.map" />
@@ -432,6 +434,7 @@
     <Content Include="DonorDemo\dist\css\adminlte.min.css.map" />
     <Content Include="DonorDemo\insights-slice-opportunity-pizza.webp" />
     <Content Include="LoginService.ashx" />
+    <Content Include="InsuranceService.ashx" />
     <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <Content Include="questionAsked.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -482,6 +485,9 @@
       <DependentUpon>About.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="InsuranceService.ashx.cs">
+      <DependentUpon>InsuranceService.ashx</DependentUpon>
+    </Compile>
     <Compile Include="LoginService.ashx.cs">
       <DependentUpon>LoginService.ashx</DependentUpon>
     </Compile>

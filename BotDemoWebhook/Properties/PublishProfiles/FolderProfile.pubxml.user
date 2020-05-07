@@ -37,10 +37,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>06/14/2019 15:31:43</publishTime>
     </File>
     <File Include="bin/BotDemoWebhook.Web.dll">
-      <publishTime>04/28/2020 15:04:32</publishTime>
+      <publishTime>05/07/2020 14:12:08</publishTime>
     </File>
     <File Include="bin/BotDemoWebhook.Web.pdb">
-      <publishTime>04/28/2020 15:04:32</publishTime>
+      <publishTime>05/07/2020 14:12:08</publishTime>
     </File>
     <File Include="bin/chatJoined.json">
       <publishTime>06/14/2019 15:33:12</publishTime>
@@ -735,6 +735,9 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="DonorDemo/index.html">
       <publishTime>03/01/2019 10:37:47</publishTime>
     </File>
+    <File Include="DonorDemo/index.insurance.html">
+      <publishTime>05/07/2020 11:25:59</publishTime>
+    </File>
     <File Include="DonorDemo/index2.html">
       <publishTime>03/05/2019 09:02:36</publishTime>
     </File>
@@ -1128,11 +1131,17 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="HappyPizzaBookService.ashx">
       <publishTime>04/28/2020 14:06:39</publishTime>
     </File>
+    <File Include="InsuranceService.ashx">
+      <publishTime>05/07/2020 10:05:52</publishTime>
+    </File>
     <File Include="LoginService.ashx">
       <publishTime>04/28/2020 14:33:26</publishTime>
     </File>
     <File Include="questionAsked.json">
       <publishTime>06/14/2019 15:49:20</publishTime>
+    </File>
+    <File Include="readme.txt">
+      <publishTime>05/07/2020 11:07:57</publishTime>
     </File>
     <File Include="Scripts/bootstrap.js">
       <publishTime>06/11/2019 16:16:16</publishTime>
