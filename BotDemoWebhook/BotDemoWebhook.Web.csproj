@@ -435,6 +435,7 @@
     <Content Include="DonorDemo\insights-slice-opportunity-pizza.webp" />
     <Content Include="LoginService.ashx" />
     <Content Include="InsuranceService.ashx" />
+    <Content Include="HomeEquityLoanService.ashx" />
     <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <Content Include="questionAsked.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -487,6 +488,9 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="InsuranceService.ashx.cs">
       <DependentUpon>InsuranceService.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="HomeEquityLoanService.ashx.cs">
+      <DependentUpon>HomeEquityLoanService.ashx</DependentUpon>
     </Compile>
     <Compile Include="LoginService.ashx.cs">
       <DependentUpon>LoginService.ashx</DependentUpon>

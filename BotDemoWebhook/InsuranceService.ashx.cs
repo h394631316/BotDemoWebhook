@@ -63,9 +63,9 @@ namespace BotDemoWebhook.Web
                     {
                         List<InsuranceAccount> accounts = GetAccounts();
                         
-                        string number = data.FormValues.FirstOrDefault(a => a.label.Equals("number", StringComparison.InvariantCultureIgnoreCase))?.value;
-                        string name = data.FormValues.FirstOrDefault(a => a.label.Equals("name", StringComparison.InvariantCultureIgnoreCase))?.value;
-                        string birth = data.FormValues.FirstOrDefault(a => a.label.Equals("birth", StringComparison.InvariantCultureIgnoreCase))?.value;
+                        string number = data.FormValues.FirstOrDefault(a => a.label.Equals("Claim number", StringComparison.InvariantCultureIgnoreCase))?.value;
+                        string name = data.FormValues.FirstOrDefault(a => a.label.Equals("Name", StringComparison.InvariantCultureIgnoreCase))?.value;
+                        string birth = data.FormValues.FirstOrDefault(a => a.label.Equals("Date of birth", StringComparison.InvariantCultureIgnoreCase))?.value;
 
                         var account = accounts.FirstOrDefault(a => a.number == number && a.name == name && a.birth == birth);
 
@@ -100,8 +100,8 @@ namespace BotDemoWebhook.Web
                     {
                         List<InsuranceAccount> accounts = GetAccounts();
 
-                        string number = data.FormValues.FirstOrDefault(a => a.label.Equals("number", StringComparison.InvariantCultureIgnoreCase))?.value;
-                        string organization = data.FormValues.FirstOrDefault(a => a.label.Equals("organization", StringComparison.InvariantCultureIgnoreCase))?.value;
+                        string number = data.FormValues.FirstOrDefault(a => a.label.Equals("Plan ID", StringComparison.InvariantCultureIgnoreCase))?.value;
+                        string organization = data.FormValues.FirstOrDefault(a => a.label.Equals("Name of organization", StringComparison.InvariantCultureIgnoreCase))?.value;
                        
                         var account = accounts.FirstOrDefault(a => a.number == number && a.organisation == organization);
                         
@@ -157,7 +157,7 @@ namespace BotDemoWebhook.Web
                         },
                         new InsuranceAccount{
                             number = "2846757",
-                            name = "Steve Jack",
+                            name = "Jack Jones",
                             birth = "15/04/1984", 
                             amount = "$756.98",
 
@@ -166,7 +166,7 @@ namespace BotDemoWebhook.Web
                         },
                         new InsuranceAccount{
                             number = "2846758",
-                            name = "Steve Jim",
+                            name = "Jim Jones",
                             birth = "15/05/1985",
                             amount = "$856.98",
 

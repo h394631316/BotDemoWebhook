@@ -1055,3 +1055,171 @@ input:{
 2020/4/28 2:37:43 PM
 
  output:"[{\r\n  'type': 'text',\r\n  'content': {\r\n    'message': 'Login succeeded.'\r\n  }\r\n}]"
+2020/6/4 3:33:45 PM
+input:{
+	"formValues":[
+		{
+			"label":"home value",
+			"value":"$500,000"
+		},
+		{
+			"label":"mortgage balance",
+			"value":"$200,000"
+		},
+		{
+			"label":"primary or secondary home",
+			"value":"primary"
+		},
+		{
+			"label":"zip code",
+			"value":"48002"
+		}
+		]
+}
+2020/6/4 3:33:45 PM
+
+ output:"[{\r\n  'type': 'text',\r\n  'content': {\r\n    'message': 'Thanks. Based on what you’ve entered, your maximum loan amount would be $225,000.00.'\r\n  }\r\n}]"
+2020/6/4 3:34:55 PM
+input:{
+	"formValues":[
+		{
+			"label":"home value",
+			"value":"$500,000"
+		},
+		{
+			"label":"mortgage balance",
+			"value":"$200,000"
+		},
+		{
+			"label":"primary or secondary home",
+			"value":"primary"
+		},
+		{
+			"label":"zip code",
+			"value":"48002"
+		}
+		]
+}
+2020/6/4 3:34:55 PM
+
+ output:"[{\r\n  'type': 'text',\r\n  'content': {\r\n    'message': 'Thanks. Based on what you’ve entered, your maximum loan amount would be $225,000.'\r\n  }\r\n}]"
+2020/6/4 3:35:14 PM
+input:{
+	"formValues":[
+		{
+			"label":"home value",
+			"value":"$500,000"
+		},
+		{
+			"label":"mortgage balance",
+			"value":"$200,003"
+		},
+		{
+			"label":"primary or secondary home",
+			"value":"primary"
+		},
+		{
+			"label":"zip code",
+			"value":"48002"
+		}
+		]
+}
+2020/6/4 3:35:14 PM
+
+ output:"[{\r\n  'type': 'text',\r\n  'content': {\r\n    'message': 'Thanks. Based on what you’ve entered, your maximum loan amount would be $224,998.'\r\n  }\r\n}]"
+2020/6/4 3:35:27 PM
+input:{
+	"formValues":[
+		{
+			"label":"home value",
+			"value":"$500,000"
+		},
+		{
+			"label":"mortgage balance",
+			"value":"$200,003"
+		},
+		{
+			"label":"primary or secondary home",
+			"value":"secondary"
+		},
+		{
+			"label":"zip code",
+			"value":"48002"
+		}
+		]
+}
+2020/6/4 3:35:27 PM
+
+ output:"[{\r\n  'type': 'text',\r\n  'content': {\r\n    'message': 'Thanks. Based on what you’ve entered, your maximum loan amount would be $239,998.'\r\n  }\r\n}]"
+2020/6/4 3:35:37 PM
+input:{
+	"formValues":[
+		{
+			"label":"home value",
+			"value":"$500,000"
+		},
+		{
+			"label":"mortgage balance",
+			"value":"$200,003"
+		},
+		{
+			"label":"primary or secondary home",
+			"value":"primary"
+		},
+		{
+			"label":"zip code",
+			"value":"48002"
+		}
+		]
+}
+2020/6/4 3:35:37 PM
+
+ output:"[{\r\n  'type': 'text',\r\n  'content': {\r\n    'message': 'Thanks. Based on what you’ve entered, your maximum loan amount would be $224,998.'\r\n  }\r\n}]"
+2020/6/4 3:37:09 PM
+input:{
+	"formValues":[
+		{
+			"label":"home value",
+			"value":"$500,000.32"
+		},
+		{
+			"label":"mortgage balance",
+			"value":"$200,003"
+		},
+		{
+			"label":"primary or secondary home",
+			"value":"primary"
+		},
+		{
+			"label":"zip code",
+			"value":"48002"
+		}
+		]
+}
+2020/6/4 3:37:09 PM
+
+ output:"[{\r\n  'type': 'text',\r\n  'content': {\r\n    'message': 'Thanks. Based on what you’ve entered, your maximum loan amount would be $224,998.'\r\n  }\r\n}]"
+2020/6/4 3:37:15 PM
+input:{
+	"formValues":[
+		{
+			"label":"home value",
+			"value":"$500,000"
+		},
+		{
+			"label":"mortgage balance",
+			"value":"$200,003"
+		},
+		{
+			"label":"primary or secondary home",
+			"value":"primary"
+		},
+		{
+			"label":"zip code",
+			"value":"48002"
+		}
+		]
+}
+2020/6/4 3:37:15 PM
+
+ output:"[{\r\n  'type': 'text',\r\n  'content': {\r\n    'message': 'Thanks. Based on what you’ve entered, your maximum loan amount would be $224,998.'\r\n  }\r\n}]"
