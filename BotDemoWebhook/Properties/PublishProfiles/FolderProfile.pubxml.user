@@ -37,10 +37,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>06/14/2019 15:31:43</publishTime>
     </File>
     <File Include="bin/BotDemoWebhook.Web.dll">
-      <publishTime>05/07/2020 14:12:08</publishTime>
+      <publishTime>06/04/2020 16:17:43</publishTime>
     </File>
     <File Include="bin/BotDemoWebhook.Web.pdb">
-      <publishTime>05/07/2020 14:12:08</publishTime>
+      <publishTime>06/04/2020 16:17:43</publishTime>
     </File>
     <File Include="bin/chatJoined.json">
       <publishTime>06/14/2019 15:33:12</publishTime>
@@ -1130,6 +1130,9 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     </File>
     <File Include="HappyPizzaBookService.ashx">
       <publishTime>04/28/2020 14:06:39</publishTime>
+    </File>
+    <File Include="HomeEquityLoanService.ashx">
+      <publishTime>06/04/2020 14:58:33</publishTime>
     </File>
     <File Include="InsuranceService.ashx">
       <publishTime>05/07/2020 10:05:52</publishTime>

@@ -53,10 +53,10 @@ namespace BotDemoWebhook.Web
             {
                 case "loan":
                     {                        
-                        string homeValue = data.FormValues.FirstOrDefault(a => a.label.Equals("home value", StringComparison.InvariantCultureIgnoreCase))?.value;
-                        string mortgageBalance = data.FormValues.FirstOrDefault(a => a.label.Equals("mortgage balance", StringComparison.InvariantCultureIgnoreCase))?.value;
-                        string primaryOrSecondaryHome = data.FormValues.FirstOrDefault(a => a.label.Equals("primary or secondary home", StringComparison.InvariantCultureIgnoreCase))?.value;
-                        string zipCode = data.FormValues.FirstOrDefault(a => a.label.Equals("zip code", StringComparison.InvariantCultureIgnoreCase))?.value;
+                        string homeValue = data.FormValues.FirstOrDefault(a => a.label.Equals("home_value", StringComparison.InvariantCultureIgnoreCase))?.value;
+                        string mortgageBalance = data.FormValues.FirstOrDefault(a => a.label.Equals("mortgage_balance", StringComparison.InvariantCultureIgnoreCase))?.value;
+                        string primaryOrSecondaryHome = data.FormValues.FirstOrDefault(a => a.label.Equals("primary_or_secondary", StringComparison.InvariantCultureIgnoreCase))?.value;
+                        string zipCode = data.FormValues.FirstOrDefault(a => a.label.Equals("sys-zip-code", StringComparison.InvariantCultureIgnoreCase))?.value;
 
                         //loan amount primary （home value-mortgage balance）*0.75
                         //secondary （home value-mortgage balance）*0.8
