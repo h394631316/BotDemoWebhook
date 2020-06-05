@@ -81,6 +81,11 @@ namespace BotDemoWebhook.Web
   'content': {
     'message': '"+ stringResult + @"'
   }
+},{
+  'type': 'text',
+  'content': {
+    'message': 'Would you like me to email you a summary of your home equity loan options? Just tell me your email address if so.'
+  }
 }]";
 
                         break;
